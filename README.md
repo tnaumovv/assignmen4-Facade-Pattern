@@ -38,14 +38,7 @@ java -cp out AcceptanceChecks
 | `ConversionResult.java` | Immutable high-level conversion result |
 | `AcceptanceChecks.java` | Checks the conversion result and invalid inputs |
 
-The UML class diagram is available in [`report/Facade_Class_Diagram.svg`](report/Facade_Class_Diagram.svg).
-
 ## GitHub repository
 
 https://github.com/tnaumovv/assignmen4-Facade-Pattern
 
-## Report
-
-- [Report PDF](report/Assignment4_Facade_Report.pdf)
-- [Editable report](report/Assignment4_Facade_Report.docx)
-- [UML diagram PDF](report/Facade_Class_Diagram.pdf)
