@@ -36,7 +36,7 @@ Supported simulated source formats are AVI, MKV, and MP4. Supported targets are 
 - `BitrateReader.transcode(MediaMetadata metadata, CodecPair codecs): ConversionResult`
 - `AudioMixer.normalizeAudio(ConversionResult media): ConversionResult`
 - `MediaMetadata` stores the input name, source format, duration, source video/audio bitrates, and simulated audio peak.
-- `CodecPair` stores the decoder name, encoder name, and target video bitrate.
+- `CodecPair` stores the decoder name, encoder name, target video bitrate, and normalized target format.
 - `ConversionResult` stores the input/output formats, codec names, duration, output video/audio bitrates, normalized audio peak, and estimated size.
 
 Subsystem objects are method-local helpers created by the Facade. UML therefore uses dashed dependencies with open arrowheads for Facade-to-subsystem relationships, not associations or diamonds. `Main` depends on the Facade and the returned result type. Subsystems depend on the record types named in their signatures. No subsystem points back to the Facade, and no subsystem-to-subsystem arrows are shown because coordination and handoff happen through the Facade.

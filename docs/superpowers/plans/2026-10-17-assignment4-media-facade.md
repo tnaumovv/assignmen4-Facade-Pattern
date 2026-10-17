@@ -74,7 +74,7 @@ Expected: compilation fails because the approved Facade and result types do not 
 
 - [ ] **Step 1: Add the immutable data records**
 
-Implement `MediaMetadata(String fileName, String sourceFormat, int durationSeconds, int sourceVideoBitrateKbps, int sourceAudioBitrateKbps, double audioPeakDb)`, `CodecPair(String decoderName, String encoderName, int targetVideoBitrateKbps)`, and `ConversionResult(String fileName, String sourceFormat, String targetFormat, String decoderName, String encoderName, int durationSeconds, int videoBitrateKbps, int audioBitrateKbps, double audioPeakDb, long estimatedSizeKb)`. Add `ConversionResult.withAudioSettings(int audioBitrateKbps, double audioPeakDb, long estimatedSizeKb): ConversionResult` so `AudioMixer` returns a new result rather than mutating data.
+Implement `MediaMetadata(String fileName, String sourceFormat, int durationSeconds, int sourceVideoBitrateKbps, int sourceAudioBitrateKbps, double audioPeakDb)`, `CodecPair(String decoderName, String encoderName, int targetVideoBitrateKbps, String targetFormat)`, and `ConversionResult(String fileName, String sourceFormat, String targetFormat, String decoderName, String encoderName, int durationSeconds, int videoBitrateKbps, int audioBitrateKbps, double audioPeakDb, long estimatedSizeKb)`. Add `ConversionResult.withAudioSettings(int audioBitrateKbps, double audioPeakDb, long estimatedSizeKb): ConversionResult` so `AudioMixer` returns a new result rather than mutating data.
 
 - [ ] **Step 2: Implement metadata and codec selection**
 
